@@ -13,7 +13,10 @@ public class PlayerMovement : MonoBehaviour
     bool jump = false;
     bool crouch = false;
 
-
+    void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 
     void Update()
     {
