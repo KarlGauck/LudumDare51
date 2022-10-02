@@ -6,8 +6,10 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public CharacterController2D controller;
+    public Ability ability;
 
     public float runSpeed = 40;
+    public float runFaster = 70;
 
     float horizontalMove = 0;
     bool jump = false;
@@ -20,7 +22,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        if(ability.isAktive("run")){
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runFaster;
+        }else{
+            horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        }
+        
         if(Input.GetButtonDown("Jump")){
             jump = true;
         }

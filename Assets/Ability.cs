@@ -15,14 +15,12 @@ public class Ability : MonoBehaviour
 
     void Start()
     {
-        abilities.Add("Gun",true);
+        //abilities.Add("Gun",true);
         abilities.Add("Doublejump",true);
-        abilities.Add("Superjump",false);
-        abilities.Add("Rocketlauncher",false);
-        // abilities["Superjump"] = superjump;
-        // abilities["Doublejump"] = doublejump;
-        // abilities["Gun"] = gun;
-        // abilities["Rocketlauncher"] = rocketlauncher;
+        //abilities.Add("run",true);
+        //abilities.Add("Superjump",false);
+        //abilities.Add("Rocketlauncher",false);
+        abilities.Add("Grenade",true);
     }
 
     // Update is called once per frame
@@ -36,11 +34,9 @@ public class Ability : MonoBehaviour
                 List<string> keys2 = new List<string>();
                 foreach(var key in keys){
                     keys2.Add(key);
-                    print(key);
                 }
                 foreach(var  key in keys2){
                     abilities[key] = false;
-                    print("gemacht ");
                     print(key);
                 }
 

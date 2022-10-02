@@ -32,7 +32,6 @@ public class CharacterController2D : MonoBehaviour
 
 	//eigene variablen
 	public Ability ability;
-	//public Ability ausgeruestet = Ability.Doublejump;
 	bool airjump = false;
 	public float SupersprungFaktor = 200;
 
