@@ -31,7 +31,8 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_wasCrouching = false;
 
 	//eigene variablen
-	public Ability ausgeruestet = Ability.Doublejump;
+	public Ability ability;
+	//public Ability ausgeruestet = Ability.Doublejump;
 	bool airjump = false;
 	public float SupersprungFaktor = 200;
 
@@ -59,7 +60,7 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-				if(ausgeruestet == Ability.Doublejump){
+				if(ability.abilities["Doublejump"]){
 					airjump = true;
 				}else{
 					airjump = false;
@@ -144,7 +145,7 @@ public class CharacterController2D : MonoBehaviour
 				
 			}
 			m_Grounded = false;
-			if(ausgeruestet == Ability.Superjump){
+			if(false){
 				float springforce = m_JumpForce + SupersprungFaktor;
 				m_Rigidbody2D.AddForce(new Vector2(0f, springforce));
 			}else{
@@ -159,18 +160,7 @@ public class CharacterController2D : MonoBehaviour
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;
 
-		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+		transform.Rotate(0f,180f, 0f);
 	}
 
 }
-public enum Ability
-        {
-            Gun,
-            Doublejump,
-            Superjump,
-            Flamephrower,
-            Landed
-        }
