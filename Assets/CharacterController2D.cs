@@ -145,7 +145,7 @@ public class CharacterController2D : MonoBehaviour
 				
 			}
 			m_Grounded = false;
-			if(false){
+			if(ability.abilities["Superjump"]){
 				float springforce = m_JumpForce + SupersprungFaktor;
 				m_Rigidbody2D.AddForce(new Vector2(0f, springforce));
 			}else{
