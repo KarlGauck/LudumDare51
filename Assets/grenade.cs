@@ -11,6 +11,7 @@ public class grenade : MonoBehaviour
 	public Rigidbody2D rb;
     public Transform attackPoint;
     public LayerMask explotionLayers;
+    bool automatic = true;
     public float timeBeforExplotion = 2f;
     float expolotionTime = 0f;
 	//public GameObject impactEffect;
@@ -23,10 +24,18 @@ public class grenade : MonoBehaviour
 
     void Update(){
         if(Time.time >= expolotionTime){
-            explode();
+            if(automatic){
+                 explode();
+            }
+           
             
         }
     }
+    void OnTriggerEnter2D (Collider2D hitInfo)
+	{
+		explode();
+		//Instantiate(impactEffect, transform.position, transform.rotation);
+	}
 
 	void explode()
 	{

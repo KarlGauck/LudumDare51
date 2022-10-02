@@ -17,10 +17,10 @@ public class Ability : MonoBehaviour
     {
         //abilities.Add("Gun",true);
         abilities.Add("Doublejump",true);
-        //abilities.Add("run",true);
-        //abilities.Add("Superjump",false);
-        //abilities.Add("Rocketlauncher",false);
-        abilities.Add("Grenade",true);
+        abilities.Add("Run",true);
+        //abilities.Add("Superjump",true);
+        abilities.Add("Rocketlauncher",true);
+        //abilities.Add("Grenade",true);
     }
 
     // Update is called once per frame

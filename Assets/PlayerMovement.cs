@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if(ability.isAktive("run")){
+        if(ability.isAktive("Run")){
             horizontalMove = Input.GetAxisRaw("Horizontal") * runFaster;
         }else{
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
