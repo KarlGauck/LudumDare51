@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    //public Abilities abilities;
+    public Ability ability;
     public Transform firePoint;
     public GameObject bulletPrefab;
     public GameObject rocketPrefab;
@@ -16,14 +16,11 @@ public class Weapon : MonoBehaviour
     
     void Update()
     {
-        // Switch(abilities.ausgeruestet){
-        //     case Ability.Gun:
-        //         fireRate = fireRateGun;
-        //         break;
-        //     case Ability.Rocketlauncher:
-        //         fireRate = fireRateRocket;
-        //         break;
-        // }
+        if(ability.isAktive("Gun")){
+			fireRate = fireRateGun;
+		 }else if(ability.isAktive("Rocketlauncher")){
+			fireRate = fireRateRocket;
+		}
         if(Time.time >= nextAtacktime){
             if(Input.GetButtonDown("Fire1")){
                 Shoot();
@@ -33,6 +30,12 @@ public class Weapon : MonoBehaviour
         }
     }
     void Shoot(){
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if(ability.isAktive("Gun")){
+			Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+		}else if(ability.isAktive("Rocketlauncher")){
+            //Vector3 v = new Vector3(0.5,0,0)
+			Instantiate(rocketPrefab, firePoint.position, firePoint.rotation);
+		}
+        
     }
 }
