@@ -342,7 +342,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1094,7 +1094,7 @@ Tilemap:
       m_TileIndex: 5
       m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0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
+      m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -1602,8 +1602,6 @@ Tilemap:
   m_TileAssetArray:
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 16
-    m_Data: {fileID: 11400000, guid: 4472cf505b465a138a1c0609ce62050a, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 0
@@ -1841,7 +1839,6 @@ GameObject:
   - component: {fileID: 687218891}
   - component: {fileID: 687218890}
   - component: {fileID: 687218889}
-  - component: {fileID: 687218895}
   - component: {fileID: 687218894}
   - component: {fileID: 687218893}
   m_Layer: 0
@@ -1893,7 +1890,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 6200000, guid: 7302de38ad1f5f342bb9928f292bfefe, type: 2}
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1958,8 +1955,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687218888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1035, y: 0.1421, z: 0}
-  m_LocalScale: {x: 0.943, y: 0.9478, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 612996384}
@@ -1993,7 +1990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf2e46f20571f0e418b661bda43214ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 600
+  m_JumpForce: 400
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
@@ -2002,7 +1999,7 @@ MonoBehaviour:
     m_Bits: 23
   m_GroundCheck: {fileID: 896035727}
   m_CeilingCheck: {fileID: 612996384}
-  m_CrouchDisableCollider: {fileID: 687218889}
+  m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
