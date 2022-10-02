@@ -30,6 +30,12 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+	//eigene variablen
+	public Ability ability;
+	//public Ability ausgeruestet = Ability.Doublejump;
+	bool airjump = false;
+	public float SupersprungFaktor = 200;
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -54,6 +60,12 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
+				if(ability.abilities["Doublejump"]){
+					airjump = true;
+				}else{
+					airjump = false;
+				}
+				
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
 			}
@@ -124,11 +136,21 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 		// If the player should jump...
-		if (m_Grounded && jump)
+		if ((airjump || m_Grounded) && jump)
 		{
 			// Add a vertical force to the player.
+			if(m_Grounded == false){
+				airjump = false;
+				m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x, 0);
+				
+			}
 			m_Grounded = false;
-			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			if(false){
+				float springforce = m_JumpForce + SupersprungFaktor;
+				m_Rigidbody2D.AddForce(new Vector2(0f, springforce));
+			}else{
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			}
 		}
 	}
 
@@ -138,9 +160,7 @@ public class CharacterController2D : MonoBehaviour
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;
 
-		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+		transform.Rotate(0f,180f, 0f);
 	}
+
 }
