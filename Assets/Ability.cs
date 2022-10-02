@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Ability : MonoBehaviour
 {
@@ -10,10 +11,6 @@ public class Ability : MonoBehaviour
 
     
     public IDictionary<string, bool> abilities = new Dictionary<string, bool>();
-    public bool superjump = false;
-    public bool doublejump = true;
-    public bool gun = true;
-    public bool rocketlauncher = false;
 
 
     void Start()
@@ -22,10 +19,10 @@ public class Ability : MonoBehaviour
         abilities.Add("Doublejump",true);
         abilities.Add("Superjump",false);
         abilities.Add("Rocketlauncher",false);
-        abilities["Superjump"] = superjump;
-        abilities["Doublejump"] = doublejump;
-        abilities["Gun"] = gun;
-        abilities["Rocketlauncher"] = rocketlauncher;
+        // abilities["Superjump"] = superjump;
+        // abilities["Doublejump"] = doublejump;
+        // abilities["Gun"] = gun;
+        // abilities["Rocketlauncher"] = rocketlauncher;
     }
 
     // Update is called once per frame
@@ -33,28 +30,29 @@ public class Ability : MonoBehaviour
     {   
         if(wechseln){
             if(Time.time >= nextAbilitytime){
-                bool s = abilities["Superjump"];//voruebergehtend
-                //alle sollen auf false gestellt werden (hat nicht geklapt)
-                
-                abilities["Superjump"] = false;
-                abilities["Doublejump"] = false;
-                abilities["Gun"] = false;
-                abilities["Rocketlauncher"] = false;
 
-                //zufaellige 
-                if(s){
-                    abilities["Doublejump"] = true;
-                }else{
-                    abilities["Superjump"] = true;
+                //alle false
+                ICollection<string> keys = abilities.Keys;
+                List<string> keys2 = new List<string>();
+                foreach(var key in keys){
+                    keys2.Add(key);
+                    print(key);
                 }
+                foreach(var  key in keys2){
+                    abilities[key] = false;
+                    print("gemacht ");
+                    print(key);
+                }
+
+                // eine zufällige
+                System.Random rd = new System.Random();
+                int rand_num = rd.Next(0,keys2.Count);
+                abilities[keys2[rand_num]] = true;
+                print(true);
+                print(keys2[rand_num]);
                 
                 nextAbilitytime = Time.time + everyXseconds;
             }
-        }else{
-            abilities["Superjump"] = superjump;
-            abilities["Doublejump"] = doublejump;
-            abilities["Gun"] = gun;
-            abilities["Rocketlauncher"] = rocketlauncher;
         }
     }
 
