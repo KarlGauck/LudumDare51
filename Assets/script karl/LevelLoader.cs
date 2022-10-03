@@ -9,18 +9,7 @@ public class LevelLoader : MonoBehaviour
     public int iLevelToLoad;
     public string sLevelToLoad;
     public bool loadLevelByInt = false;
-
-
-
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string requiredItem = "";
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -28,7 +17,9 @@ public class LevelLoader : MonoBehaviour
 
         if(collisionGameObject.name == "player")
         {
-            LoadScene();
+            Inventory inv = collisionGameObject.GetComponent<Inventory>();
+            if (inv.hasItem(requiredItem))
+                LoadScene();
         }
     }
 
