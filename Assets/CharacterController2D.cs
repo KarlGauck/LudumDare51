@@ -32,7 +32,6 @@ public class CharacterController2D : MonoBehaviour
 
 	//eigene variablen
 	public Ability ability;
-	//public Ability ausgeruestet = Ability.Doublejump;
 	bool airjump = false;
 	public float SupersprungFaktor = 200;
 
@@ -60,7 +59,7 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-				if(ability.abilities["Doublejump"]){
+				if(ability.isAktive("Doublejump")){
 					airjump = true;
 				}else{
 					airjump = false;
@@ -145,7 +144,7 @@ public class CharacterController2D : MonoBehaviour
 				
 			}
 			m_Grounded = false;
-			if(ability.abilities["Superjump"]){
+			if(ability.isAktive("Superjump")){
 				float springforce = m_JumpForce + SupersprungFaktor;
 				m_Rigidbody2D.AddForce(new Vector2(0f, springforce));
 			}else{
