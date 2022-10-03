@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/New Scene.unity
-    guid: 7a2e24af3d2d1fb40bf2349b707548a8
+    path: Assets/Scenes/PublicArea.unity
+    guid: 1863964f5917375499bdab3c924ddf68
+  - enabled: 1
+    path: Assets/Scenes/Cyberware.unity
+    guid: afb073954341d0e489557b494ccc5d3f
+  - enabled: 1
+    path: Assets/Scenes/Weapons.unity
+    guid: 9e9277c9bb9de574c945c6beaf92ef17
+  - enabled: 1
+    path: Assets/Scenes/Last Room.unity
+    guid: 7c602c16bd9bdf14590ab95de91f79b1
   m_configObjects: {}

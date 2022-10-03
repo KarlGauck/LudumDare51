@@ -43,9 +43,8 @@ public class Health : MonoBehaviour
 
 	void Die ()
 	{
-		if(deathEffect != null){
+		if (deathEffect != null)
 			Instantiate(deathEffect, transform.position, Quaternion.identity);
-		}
 		Destroy(gameObject);
 	}
 }
