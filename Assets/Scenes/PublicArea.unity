@@ -10733,6 +10733,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &922048534 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7470464610443698696, guid: 364fff9416d1567488071de586ec5d00, type: 3}
+  m_PrefabInstance: {fileID: 1194163176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0653cafb01030547b860768397c2751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1064740780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11273,6 +11284,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 228250231988250634, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 922048534}
     - target: {fileID: 228250231988250634, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
       propertyPath: timeBar
       value: 
