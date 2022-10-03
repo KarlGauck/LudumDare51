@@ -494,7 +494,7 @@ MonoBehaviour:
   healthBar: {fileID: 5158814507506302908}
   regenerationTime: 10
   regenerationStrenght: 0
-  deathEffect: {fileID: 2439389093053454346, guid: 0d3997af103ab8243b81dfe234ba9504, type: 3}
+  deathEffect: {fileID: 0}
 --- !u!114 &5158814507688691310
 MonoBehaviour:
   m_ObjectHideFlags: 0
