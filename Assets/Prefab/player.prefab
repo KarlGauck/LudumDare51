@@ -310,9 +310,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2eadd310b055f84da07176a16179cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
+  maxHealth: 500
   health: 100
   healthBar: {fileID: 0}
+  regenerationTime: 10
+  regenerationStrenght: 30
   deathEffect: {fileID: 2439389093053454346, guid: 0d3997af103ab8243b81dfe234ba9504, type: 3}
 --- !u!114 &7887286204262347500
 MonoBehaviour:

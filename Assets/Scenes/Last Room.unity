@@ -142,6 +142,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy with healthbar (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: fireRate
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8503412509692820541, guid: ae56c097a114d9d46a71bcf685a3a5ea, type: 3}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -211,6 +219,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -710,6 +722,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -783,6 +799,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -852,6 +872,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy with healthbar (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: fireRate
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8503412509692820541, guid: ae56c097a114d9d46a71bcf685a3a5ea, type: 3}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1174,6 +1202,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy with healthbar (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: fireRate
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8503412509692820541, guid: ae56c097a114d9d46a71bcf685a3a5ea, type: 3}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -1239,6 +1275,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy with healthbar (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: fireRate
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 8503412509692820541, guid: ae56c097a114d9d46a71bcf685a3a5ea, type: 3}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -22086,6 +22130,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -22363,6 +22411,18 @@ PrefabInstance:
     - target: {fileID: 228250231988250644, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228250231988250645, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 228250231988250646, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: m_JumpForce
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 228250231988250646, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 7887286204262347501, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
       propertyPath: healthBar
