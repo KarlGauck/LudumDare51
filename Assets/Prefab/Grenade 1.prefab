@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   hight: 3
-  damage: 70
+  damage: 100
   explosionsRadius: 1
   rb: {fileID: 1817342165420694845}
   attackPoint: {fileID: 6864447393681541591}
