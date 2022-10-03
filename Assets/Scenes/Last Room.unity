@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -1066,6 +1070,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -1195,6 +1203,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -1884,7 +1896,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1348958546}
-  m_Enabled: 1
+  m_Enabled: 1https://docs.unity3d.com/ScriptReference/AudioSource.html
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
   m_Name: 
@@ -1973,7 +1985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       objectReference: {fileID: 0}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2063,7 +2075,7 @@ PrefabInstance:
     - target: {fileID: 5158814507609432604, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 0}https://docs.unity3d.com/ScriptReference/AudioSource.html
     - target: {fileID: 5158814507609432604, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2421,7 +2433,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1073741825https://docs.unity3d.com/ScriptReference/AudioSource.html
   - first: {x: 52, y: -15, z: 0}
     second:
       serializedVersion: 2
@@ -2477,7 +2489,7 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
+      m_TileMatrixIndex: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -2767,7 +2779,7 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
+      m_TileMatrixIndex: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -2875,7 +2887,7 @@ Tilemap:
   - first: {x: -33, y: -14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
+      m_TileIndex: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -3191,7 +3203,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1073741825https://docs.unity3d.com/ScriptReference/AudioSource.html
   - first: {x: -1, y: -14, z: 0}
     second:
       serializedVersion: 2
@@ -3290,7 +3302,7 @@ Tilemap:
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
+      dummyAlignment: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_AllTileFlags: 1073741825
   - first: {x: 9, y: -14, z: 0}
     second:
@@ -3375,7 +3387,7 @@ Tilemap:
   - first: {x: 17, y: -14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
+      m_TileIndex: 1https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -3521,7 +3533,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1073741825https://docs.unity3d.com/ScriptReference/AudioSource.html
   - first: {x: 32, y: -14, z: 0}
     second:
       serializedVersion: 2
@@ -3585,7 +3597,7 @@ Tilemap:
   - first: {x: 38, y: -14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
+      m_TileIndex: 2https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -3686,7 +3698,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 1https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -3753,7 +3765,7 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 55, y: -14, z: 0}
-    second:
+    second:https://docs.unity3d.com/ScriptReference/AudioSource.html
       serializedVersion: 2
       m_TileIndex: 1
       m_TileSpriteIndex: 1
@@ -3858,7 +3870,7 @@ Tilemap:
       m_TileIndex: 1
       m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileColorIndex: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -4075,7 +4087,7 @@ Tilemap:
   - first: {x: 87, y: -14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
+      m_TileIndex: 2https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -4175,7 +4187,7 @@ Tilemap:
   - first: {x: 97, y: -14, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
+      m_TileIndex: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -4303,7 +4315,7 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 110, y: -14, z: 0}
-    second:
+    second:https://docs.unity3d.com/ScriptReference/AudioSource.html
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 2
@@ -4382,7 +4394,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: -42, y: -13, z: 0}
+  - first: {x: -42, y: -13, z: 0}https://docs.unity3d.com/ScriptReference/AudioSource.html
     second:
       serializedVersion: 2
       m_TileIndex: 2
@@ -4481,7 +4493,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1073741825https://docs.unity3d.com/ScriptReference/AudioSource.html
   - first: {x: -32, y: -13, z: 0}
     second:
       serializedVersion: 2
@@ -4567,7 +4579,7 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 3
       m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
+      m_TileMatrixIndex: 0https://docs.unity3d.com/ScriptReference/AudioSource.html
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -4739,7 +4751,7 @@ Tilemap:
       m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
+      m_TileObjectToInstantiateIndex: 65535https://docs.unity3d.com/ScriptReference/AudioSource.html
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -6, y: -13, z: 0}
@@ -23121,6 +23133,10 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1250009777808290335, guid: 60f0ac099a733d2478b21dbfed473a61, type: 3}
     - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: deathEffect
       value: 
@@ -23460,6 +23476,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 228250231988250634, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 2086583127}
+    - target: {fileID: 228250231988250634, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
       propertyPath: timeBar
       value: 
       objectReference: {fileID: 2086583125}
@@ -23510,6 +23530,18 @@ PrefabInstance:
     - target: {fileID: 228250231988250644, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 228250231988250645, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 228250231988250646, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: m_JumpForce
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 228250231988250646, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 7887286204262347501, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
       propertyPath: healthBar
@@ -23792,6 +23824,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f64f6a8c1003a643bddef3af90c249e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2086583127 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7470464610443698696, guid: 364fff9416d1567488071de586ec5d00, type: 3}
+  m_PrefabInstance: {fileID: 2086583124}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0653cafb01030547b860768397c2751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2123170895

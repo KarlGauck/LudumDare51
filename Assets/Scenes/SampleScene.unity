@@ -157,6 +157,7 @@ MonoBehaviour:
   iLevelToLoad: 0
   sLevelToLoad: New Scene
   loadLevelByInt: 0
+  requiredItem: 
 --- !u!61 &13513825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1732,6 +1733,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 228250231988250634, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1963486011}
+    - target: {fileID: 228250231988250634, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
       propertyPath: timeBar
       value: 
       objectReference: {fileID: 137800527}
@@ -1787,8 +1792,17 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 237098327}
+    - target: {fileID: 7887286204262347501, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+      propertyPath: regenerationStrenght
+      value: 60
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb561e54c81119498fafc23fbefe37c, type: 3}
+--- !u!1 &849872928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6188265682870809130, guid: 280816e6c1f2f2d40a262ec31f88fae7, type: 3}
+  m_PrefabInstance: {fileID: 6188265683794766803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1385335460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +2001,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 849872928}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2120,11 +2138,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2163a3216b856e71e8794aa4bbb381e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posXRange: 0
-  negXRange: 0
-  posYRange: 0
-  negYRange: 0
-  tilemap: {fileID: 0}
+--- !u!114 &1963486011 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7470464610443698696, guid: 364fff9416d1567488071de586ec5d00, type: 3}
+  m_PrefabInstance: {fileID: 1970963524202835889}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0653cafb01030547b860768397c2751, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1970963524202835889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2216,6 +2240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1970963522471009569, guid: 364fff9416d1567488071de586ec5d00, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1970963522471009596, guid: 364fff9416d1567488071de586ec5d00, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2235,6 +2263,10 @@ PrefabInstance:
     - target: {fileID: 1970963523866192715, guid: 364fff9416d1567488071de586ec5d00, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4015751199966291461, guid: 364fff9416d1567488071de586ec5d00, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 364fff9416d1567488071de586ec5d00, type: 3}
@@ -2333,6 +2365,14 @@ PrefabInstance:
     - target: {fileID: 5158814507688691309, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: deathEffect
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_RootOrder

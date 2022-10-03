@@ -15,6 +15,7 @@ public class Ability : MonoBehaviour
     Tuple<string, string, int> vorherig = Tuple.Create(" ", " ", 0);
 
     public TimeBar timeBar;
+    public Textchange text;
 
     void Start()
     {
@@ -63,8 +64,9 @@ public class Ability : MonoBehaviour
                 // eine zufällige
                 string akey = randomAbility(keys2);
                 abilities[akey] = true;
-                print(true);
-                print(akey);
+                text.textchang(akey);
+                // print(true);
+                // print(akey);
                 
                 nextAbilitytime = Time.time + everyXseconds;
             }
