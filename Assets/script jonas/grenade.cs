@@ -42,6 +42,8 @@ public class grenade : MonoBehaviour
 		Destroy(gameObject);
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, explosionsRadius, explotionLayers);
         foreach(Collider2D enemy in hitEnemies){
+            if (enemy == null)
+                continue;
             enemy.GetComponent<Health>().TakeDamage(damage);
             print("treffer");
             print(enemy);
