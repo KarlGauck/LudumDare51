@@ -297,6 +297,7 @@ MonoBehaviour:
   everyXseconds: 10
   wechseln: 1
   timeBar: {fileID: 0}
+  text: {fileID: 0}
 --- !u!114 &7887286204262347501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2eadd310b055f84da07176a16179cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 300
   health: 100
   healthBar: {fileID: 0}
   deathEffect: {fileID: 2439389093053454346, guid: 0d3997af103ab8243b81dfe234ba9504, type: 3}

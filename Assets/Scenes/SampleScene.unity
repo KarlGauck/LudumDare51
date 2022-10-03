@@ -2446,6 +2446,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691310, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5158814507688691601, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5158814507688691603, guid: d4f45abca8d587e47bc3305e99f7e60e, type: 3}
       propertyPath: m_RootOrder
       value: 10

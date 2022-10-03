@@ -8,11 +8,26 @@ public class Health : MonoBehaviour
 	public int health = 100;
 	public HealthBar healthBar;
 
+	float nextRegeneration = 0f;
+    public float regenerationTime = 10f;
+	public int regenerationStrenght = 10;
+
 	public GameObject deathEffect;
 
 	public void Start(){
 		health = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
+	}
+
+	public void Update(){
+		if(Time.time >= nextRegeneration){
+            health += regenerationStrenght;
+			if(health > maxHealth){
+				health = maxHealth;
+			}
+			healthBar.SetHealth(health);
+            nextRegeneration = Time.time + regenerationTime;
+        }
 	}
 
 	public void TakeDamage (int damage)
