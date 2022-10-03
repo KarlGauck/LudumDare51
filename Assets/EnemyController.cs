@@ -1,17 +1,27 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 public class EnemyController: MonoBehaviour
 {
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;							// A position marking where to check if the player is grounded.
-    [SerializeField] private Pathfinding pathfinding;                           // The pathfinding script
+    [SerializeField] private Transform m_GroundCheckLeft;                       // A position marking where to check if the ground is continuing on the left hand side
+    [SerializeField] private Transform m_GroundCheckRight;                      // A position marking where to check if the ground is continuing on the right hand side
+    [SerializeField] private Transform m_ObstacleCheckRight;                    // A position marking where to check for an obstacle on the right hand side
+    [SerializeField] private Transform m_ObstacleCheckLeft;                     // A position marking where to check for an obstacle on the left hand side
+    [SerializeField] private PathfindingOwn pathfinding;                           // The pathfinding script
     [SerializeField] private Vector3 defaultPosition;                           // Where enemy should go when no targetis nearby
     [SerializeField] private GameObject target;
 
+//test
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
+    private bool m_GroundLeft;          // Weather or not the ground continues on the left hand side;
+    private bool m_GroundRight;         // Weather or not the ground continues on the right hand side;
+    private bool m_ObstacleRight;
+    private bool m_ObstacleLeft;
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -51,6 +61,38 @@ public class EnemyController: MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
+        
+        colliders = Physics2D.OverlapCircleAll(m_GroundCheckLeft.position, k_CeilingRadius, m_WhatIsGround);
+        m_GroundLeft = false;
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.gameObject != gameObject)
+                m_GroundLeft = true;
+        }
+
+        colliders = Physics2D.OverlapCircleAll(m_GroundCheckRight.position, k_CeilingRadius, m_WhatIsGround);
+        m_GroundRight = false;
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.gameObject != gameObject)
+                m_GroundRight = true;
+        }
+
+        colliders = Physics2D.OverlapCircleAll(m_ObstacleCheckLeft.position, k_CeilingRadius, m_WhatIsGround);
+        m_ObstacleLeft = false;
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.gameObject != gameObject)
+                m_ObstacleLeft = true;
+        }
+
+        colliders = Physics2D.OverlapCircleAll(m_ObstacleCheckRight.position, k_CeilingRadius, m_WhatIsGround);
+        m_ObstacleRight = false;
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.gameObject != gameObject)
+                m_ObstacleRight = true;
+        }
 	}
 
 
@@ -83,10 +125,12 @@ public class EnemyController: MonoBehaviour
     public void Jump(float xVel, float yVel)
     {
         // If the enemy should jump...
+
         if (m_Grounded)
         {
-            // Add a vertical force to the enemy.
             m_Grounded = false;
+            float jumpForce = 10.0f;
+            m_Rigidbody2D.AddForce(new Vector2(xVel*jumpForce, yVel*jumpForce*3));
             //m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         }
     }
@@ -113,11 +157,27 @@ public class EnemyController: MonoBehaviour
             return;
         Vector3 direction = (Vector3)targetDirection;        
 
-        if (direction.x > 0)
-            Move(0.3f);
-        if (direction.x < 0)
-            Move(-0.3f);
-    
+        // Weather or not the enemy can walk in this direction
+        bool isWalkable = (direction.x > 0 && (m_GroundRight && !m_ObstacleRight) || (direction.x < 0 && (m_GroundLeft && !m_ObstacleLeft)));
+
+        if (isWalkable)
+        {
+            if (direction.x > 0)
+                Move(0.3f);
+            if (direction.x < 0)
+                Move(-0.3f);
+        }
+        else
+        {
+            Vector3? targetPos = pathfinding.getNextPosition(transform.position, target.transform.position);
+            if (targetPos == null)
+                return;
+            JumpData data = pathfinding.CalculateBallisticTrajectory(transform.position, (Vector3)targetPos, 0.3f);
+            if (data == null)
+                return;
+            Jump((float)(data.velocity * Math.Cos(data.angle)), (float)(data.velocity * Math.Sin(data.angle)));
+        }
+   
     }
 
 }
