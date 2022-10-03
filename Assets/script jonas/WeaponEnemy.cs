@@ -18,6 +18,9 @@ public class WeaponEnemy : MonoBehaviour
         }
     }
     void Shoot(){
-        Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        if(bulletPrefab != null){
+            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
+        
     }
 }

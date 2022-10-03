@@ -176,5 +176,5 @@ MonoBehaviour:
   attackPoint: {fileID: 2717113046415948249}
   explotionLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
   timeBeforExplotion: 5

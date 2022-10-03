@@ -145,7 +145,7 @@ MonoBehaviour:
   attackPoint: {fileID: 7734261752741116612}
   explotionLayers:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 1
   timeBeforExplotion: 5
 --- !u!1 &4438781074812771757
 GameObject:
