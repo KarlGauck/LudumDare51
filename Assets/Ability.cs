@@ -14,15 +14,17 @@ public class Ability : MonoBehaviour
     public IDictionary<string, string> abilityClass = new Dictionary<string, string>();
     Tuple<string, string, int> vorherig = Tuple.Create(" ", " ", 0);
 
+    public TimeBar timeBar;
+
     void Start()
     {
         abilities.Add("Gun",true);
-        abilities.Add("Doublejump",true);
         abilities.Add("Run",true);
-        abilities.Add("Superjump",true);
-        abilities.Add("Rocketlauncher",true);
-        abilities.Add("Grenade",true);
-        abilities.Add("Dash",true);
+        // abilities.Add("Doublejump",true);
+        // abilities.Add("Superjump",true);
+        // abilities.Add("Rocketlauncher",true);
+        // abilities.Add("Grenade",true);
+        // abilities.Add("Dash",true);
         abilityClass.Add("Gun","weapon");
         abilityClass.Add("Rocketlauncher","weapon");
         abilityClass.Add("Grenade","weapon");
@@ -30,6 +32,9 @@ public class Ability : MonoBehaviour
         abilityClass.Add("Superjump","movement");
         abilityClass.Add("Run","movement");
         abilityClass.Add("Dash","movement");
+
+
+		timeBar.SetMaxTime(everyXseconds);
     }
 
     // Update is called once per frame
@@ -63,6 +68,8 @@ public class Ability : MonoBehaviour
                 
                 nextAbilitytime = Time.time + everyXseconds;
             }
+            timeBar.SetTime(nextAbilitytime - Time.time);
+
         }
     }
 
@@ -90,6 +97,12 @@ public class Ability : MonoBehaviour
         }
         return key;
             
+    }
+
+    public void addAbility(string a){
+        if(!abilities.ContainsKey(a)){
+            abilities.Add(a, false);
+        }
     }
 
             // Gun,

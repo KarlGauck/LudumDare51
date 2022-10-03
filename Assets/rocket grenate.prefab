@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6343412912089667444}
   - component: {fileID: 808142040283463749}
   - component: {fileID: 2746900237436641779}
-  - component: {fileID: 8004425629212962109}
+  - component: {fileID: 706483228642870069}
   m_Layer: 0
   m_Name: rocket grenate
   m_TagString: Untagged
@@ -125,7 +125,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.25, y: 0}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 1
---- !u!114 &8004425629212962109
+--- !u!114 &706483228642870069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,19 +134,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 4099033647690022688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c636f9aa95f0a429fdae33ff15c7ac, type: 3}
+  m_Script: {fileID: 11500000, guid: a53e3178fe392e642b5f91fda9dc22e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   hight: 0
   damage: 70
-  explosionsRadius: 1
+  explosionsRadius: 10
   rb: {fileID: 808142040283463749}
   attackPoint: {fileID: 7734261752741116612}
   explotionLayers:
     serializedVersion: 2
     m_Bits: 64
-  timeBeforExplotion: 10
+  timeBeforExplotion: 5
 --- !u!1 &4438781074812771757
 GameObject:
   m_ObjectHideFlags: 0

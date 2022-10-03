@@ -42,7 +42,7 @@ public class grenade : MonoBehaviour
 		Destroy(gameObject);
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, explosionsRadius, explotionLayers);
         foreach(Collider2D enemy in hitEnemies){
-            enemy.GetComponent<Enemy>().TakeDamage(damage);
+            enemy.GetComponent<Health>().TakeDamage(damage);
             print("treffer");
             print(enemy);
         }
@@ -54,11 +54,11 @@ public class grenade : MonoBehaviour
 
 		//Instantiate(impactEffect, transform.position, transform.rotation);
 	}
-	void OnDrawGizmosSelected(){
-        if(attackPoint.position == null){
-            return;
-        }
+	// void OnDrawGizmosSelected(){
+    //     if(attackPoint.position == null){
+    //         return;
+    //     }
 
-        Gizmos.DrawWireSphere(attackPoint.position, explosionsRadius);
-    }
+    //     Gizmos.DrawWireSphere(attackPoint.position, explosionsRadius);
+    // }
 }

@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7841903157187292926}
   - component: {fileID: 1383518032764349929}
   - component: {fileID: 1817342165420694845}
-  - component: {fileID: 5897479496673033028}
+  - component: {fileID: 2290258854561275140}
   m_Layer: 0
   m_Name: Grenade 1
   m_TagString: Untagged
@@ -156,7 +156,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &5897479496673033028
+--- !u!114 &2290258854561275140
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,13 +165,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4629413483548971721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c636f9aa95f0a429fdae33ff15c7ac, type: 3}
+  m_Script: {fileID: 11500000, guid: a53e3178fe392e642b5f91fda9dc22e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
-  hight: 5
+  speed: 5
+  hight: 3
   damage: 70
-  explosionsRadius: 1
+  explosionsRadius: 10
   rb: {fileID: 1817342165420694845}
   attackPoint: {fileID: 6864447393681541591}
   explotionLayers:

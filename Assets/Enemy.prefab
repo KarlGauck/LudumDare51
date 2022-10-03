@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 472028560523787911}
   - component: {fileID: 472028560523787910}
-  - component: {fileID: 472028560523787929}
   - component: {fileID: 472028560523787931}
   - component: {fileID: 472028560523787909}
-  - component: {fileID: 472028560523787906}
+  - component: {fileID: 5206946448601805835}
+  - component: {fileID: 3430071899065964333}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -89,20 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &472028560523787929
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472028560523787930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c226e26a54de3b14cb4829b8444ecea4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  deathEffect: {fileID: 2439389093053454346, guid: 7ef67691fc5450f4c98567aa7039dd71, type: 3}
 --- !u!61 &472028560523787931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -150,7 +136,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &472028560523787906
+--- !u!114 &5206946448601805835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,12 +145,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 472028560523787930}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbd755ac7661e4d4fb263b8fdd6e2381, type: 3}
+  m_Script: {fileID: 11500000, guid: 7dbc663f9258db546b8f17f6501dadbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 472028560607286882}
-  bulletPrefab: {fileID: 2439389093053454346, guid: 7ef67691fc5450f4c98567aa7039dd71, type: 3}
+  bulletPrefab: {fileID: 2439389093053454346, guid: 0d3997af103ab8243b81dfe234ba9504, type: 3}
   fireRate: 2
+--- !u!114 &3430071899065964333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472028560523787930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2eadd310b055f84da07176a16179cfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 100
+  healthBar: {fileID: 0}
+  deathEffect: {fileID: 0}
 --- !u!1 &472028560607286885
 GameObject:
   m_ObjectHideFlags: 0
