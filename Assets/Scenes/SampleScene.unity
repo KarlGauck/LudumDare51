@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 305341359}
   - component: {fileID: 305341358}
   m_Layer: 0
-  m_Name: Tilemap
+  m_Name: world
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2404,6 +2404,7 @@ GameObject:
   - component: {fileID: 1825098310}
   - component: {fileID: 1825098312}
   - component: {fileID: 1825098311}
+  - component: {fileID: 1825098313}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -2464,3 +2465,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1825098313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825098309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2163a3216b856e71e8794aa4bbb381e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
