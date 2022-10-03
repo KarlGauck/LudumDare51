@@ -2845,6 +2845,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2918,6 +2919,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab8736cc54affe45b1af4d7bb73dd00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 687218890}
+  offset: {x: 0, y: 0}
+  movementOffset: {x: 0, y: 0}
 --- !u!1 &612996383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,6 +3167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   everyXseconds: 10
   wechseln: 1
+  timeBar: {fileID: 0}
 --- !u!58 &687218896
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3296,6 +3313,7 @@ GameObject:
   - component: {fileID: 1330319062}
   - component: {fileID: 1330319061}
   - component: {fileID: 1330319060}
+  - component: {fileID: 1330319063}
   m_Layer: 0
   m_Name: seeker
   m_TagString: Untagged
@@ -3315,6 +3333,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab0d4039222fab228a4137ae0d9d5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  activateDistance: 50
+  pathUpdateSeconds: 0.5
+  speed: 200
+  nextWaypointDistance: 3
+  jumpNodeHeightRequirement: 0.8
+  jumpModifier: 0.7
+  jumpCheckOffset: 0.1
+  followEnabled: 1
+  jumpEnabled: 1
+  directionLookEnabled: 1
 --- !u!114 &1330319061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3358,3 +3387,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1330319063
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330319059}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
