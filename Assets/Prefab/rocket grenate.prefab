@@ -140,7 +140,7 @@ MonoBehaviour:
   speed: 20
   hight: 0
   damage: 70
-  explosionsRadius: 10
+  explosionsRadius: 1
   rb: {fileID: 808142040283463749}
   attackPoint: {fileID: 7734261752741116612}
   explotionLayers:
