@@ -86,7 +86,7 @@ public class Ability : MonoBehaviour
     string randomAbility(List<string> keys){
         string key = " ";
         System.Random rd = new System.Random();
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < keys.Count; i++){
             int rand_num = rd.Next(0,keys.Count);
             key = keys[rand_num];
             if(vorherig.Item2 != abilityClass[key] ||  vorherig.Item3 < 2){
